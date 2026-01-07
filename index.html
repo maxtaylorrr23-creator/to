@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MyVicRoads</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+</head>
+<body>
+
+<!-- HOME VIEW (NO SCROLL) -->
+<section id="home" class="view active">
+  <img src="IMG_6273.jpeg" class="bg" />
+
+  <button class="btn-my-licence" onclick="goLicence()"></button>
+  <button class="btn-licence-bottom" onclick="goLicence()"></button>
+</section>
+
+<!-- LICENCE VIEW -->
+<section id="licence" class="view right">
+
+  <header>
+    <button class="back" onclick="goHome()"></button>
+    <h1>myVicRoads</h1>
+  </header>
+
+  <div id="refresh" class="refresh"></div>
+
+  <!-- CONTENT SCROLLS (NOT IMAGES AS ONE BLOCK) -->
+  <main>
+    <section class="card">
+      <img src="IMG_6265.jpeg" />
+    </section>
+
+    <section class="card">
+      <img src="IMG_6270.jpeg" />
+    </section>
+  </main>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
